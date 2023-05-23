@@ -17,7 +17,7 @@
 
       <div class="weather-container">
         <!-- Grant Location Container -->
-        <div class="grant-location-container">
+        <div class="sub-container grant-location-container">
           <img
             src="./assets/location.png"
             alt="location"
@@ -32,7 +32,7 @@
         <!-- Search Container -->
         <form class="form-container" data-searchForm>
           <input placeholder="Search for City..." data-searchInput />
-          <button class="btn">
+          <button class="btn" type="submit">
             <img
               src="assets/search.png"
               width="20"
@@ -42,12 +42,12 @@
           </button>
         </form>
         <!-- Loading Screen container -->
-        <div class="loading-container">
+        <div class="sub-container loading-container">
           <img src="./assets/loading.gif" width="150" height="150" />
           <p>Loading</p>
         </div>
         <!-- show weather info -->
-        <div class="user-info-container">
+        <div class="sub-container user-info-container">
           <!--city name and Flag-->
           <div class="name">
             <p data-cityName></p>
@@ -85,6 +85,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- handle api fetch error -->
+      <div class="sub-container api-error-container">
+        <img src="./assets/not-found.png" />
       </div>
     </div>
     <script src="script.js"></script>
